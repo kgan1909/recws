@@ -5,7 +5,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/nikepan/recws"
+	"github.com/tenrok/recws"
 )
 
 func main() {
