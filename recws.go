@@ -243,6 +243,14 @@ func (rc *RecConn) setURL(url string) {
 	rc.url = url
 }
 
+// Added for some services that needs token to connect.
+func (rc *RecConn) SetURLExternal(url string) {
+	rc.mu.Lock()
+	defer rc.mu.Unlock()
+
+	rc.url = url
+}
+
 func (rc *RecConn) setReqHeader(reqHeader http.Header) {
 	rc.mu.Lock()
 	defer rc.mu.Unlock()
