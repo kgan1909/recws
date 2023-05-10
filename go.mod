@@ -1,4 +1,4 @@
-module github.com/tenrok/recws
+module github.com/kgan1909/recws
 
 go 1.18
 
